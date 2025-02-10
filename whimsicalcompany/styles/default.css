@@ -14,13 +14,13 @@ header {
 }
 
 h1 {
-    color: #B87333;
+    color: #D68B45;
     margin: 0;
     font-size: 50px;
 }
 
 header p {
-    color: #D3C0A9;
+    color: #DDCBB6;
     font-size: 20px;
 }
 
@@ -48,6 +48,7 @@ main p {
     max-width: 800px;
     margin: 0 auto;
     text-align: justify;
+    color: black;
 }
 
 footer {
