@@ -14,7 +14,7 @@ header {
 }
 
 h1 {
-    color: #ec8b30;
+    color: #ff8c20;
     margin: 0;
     font-size: 50px;
 }
@@ -47,7 +47,7 @@ main p {
     line-height: 2;
     max-width: 800px;
     margin: 0 auto;
-    text-align: justify;
+    text-align: left;
     color: black;
 }
 
