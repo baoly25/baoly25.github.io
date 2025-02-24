@@ -43,15 +43,10 @@ h3 {
 }
 
 p {
-    width: 45%;
-    margin: 0 auto; 
+    
     text-align: left; 
     line-height: 2.2; 
     color: #34D1BF;
-}
-
-#home-index {
-    text-align: center;
 }
 
 footer {
@@ -74,10 +69,6 @@ a:hover {
     text-decoration: underline;
 }
 
-img {
-    width: 10%;
-}
-
 figcaption {
     color: #34D1BF;
     font-style: italic;
@@ -90,15 +81,19 @@ li {
 
 }
 
-.bullet-list {
-    width: 45%;
-    margin: 0 auto;
-}
-
 ul {
     line-height: 30px;
 }
 
+section {
+    width: 45%;
+    margin: 0 auto;
+}
+
 #copyright {
+    text-align: center;
+}
+
+#home {
     text-align: center;
 }
