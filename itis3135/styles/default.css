@@ -98,3 +98,7 @@ li {
 ul {
     line-height: 30px;
 }
+
+#copyright {
+    text-align: center;
+}
