@@ -19,7 +19,7 @@ header {
 }
 
 h1{
-    font-size: 40px;
+    font-size: 35px;
     font-family: "Merriweather", serif;
 }
 
@@ -120,11 +120,7 @@ section {
     section {
         width: 100%;  
     }
-
-    h1 {
-        font-size: 38px;
-    }
-
+    
     p {
         font-size: 16px;
     }
@@ -144,10 +140,6 @@ section {
         max-width: 980px;
         width: 95%;
         margin: 0 auto;
-    }
-
-    h1 {
-        font-size: 34px;
     }
 
     section {
@@ -174,10 +166,6 @@ section {
         max-width: 600px;
         width: 95%;
         margin: 0 auto; 
-    }
-
-    h1 {
-        font-size: 25px; 
     }
 
     p {
