@@ -8,6 +8,7 @@ body {
     min-height: 100vh;
     flex-direction: column;
     margin: 0;
+    background-color: #14213D; 
 }
 
 header {
@@ -23,14 +24,20 @@ h1{
 }
 
 header nav {
-    font-size: 21px;
+    font-size: 22px;
+}
+
+footer nav {
+    font-size: 20px;
 }
 
 main {
     background-color: #14213D; 
     flex: 1;
     text-align: center;
-    border: 1px solid #FF6B6B;
+    max-width: 1555px;
+    margin: 0 auto;
+    width: 95%;
 }
 
 h2 {
@@ -52,7 +59,7 @@ p {
 footer {
     background-color: #0D1B2A; 
     text-align: center;
-    padding: 3px 12px;
+    padding-top: 15px;
 }
 
 nav {
@@ -96,4 +103,97 @@ section {
 
 #home {
     text-align: center;
+}
+
+/* Rule Overrides For Laptops / Small Screens */
+@media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
+    header nav {
+        font-size: 20px;
+    }
+
+    main {
+        max-width: 1400px;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    section {
+        width: 100%;  
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    footer nav {
+        font-size: 17px;
+    }
+}
+
+/* Rule Overrides For Tablet Devices */
+@media screen and ( min-width: 601px ) and ( max-width: 980px )  {
+    header nav {
+        font-size: 18px;
+    }
+
+    main {
+        max-width: 980px;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    section {
+        width: 100%;  
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    footer nav {
+        font-size: 16px;
+    }
+}
+
+/* Rule Overrides For Mobile Devices */
+@media screen and ( max-width: 600px ) {
+    header nav {
+        font-size: 16px;
+    }
+
+    main {
+        max-width: 600px;
+        width: 95%;
+        margin: 0 auto; 
+    }
+
+    h1 {
+        font-size: 25px; 
+    }
+
+    p {
+        font-size: 14px;  
+        line-height: 1.8;  
+    }
+
+    ul {
+        font-size: 14px;
+    }
+
+    section {
+        width: 100%;  
+    }
+
+    footer nav {
+        font-size: 15px;
+    }
 }
