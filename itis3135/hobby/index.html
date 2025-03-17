@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bao Ly's Hobby Page</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a2e;
+            color: #e0e0e0;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            text-align: center;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #0f3460;
+            padding: 10px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2em;
+            color: #f0a500;
+        }
+
+        nav {
+            margin: 15px 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+        }
+
+        nav a {
+            display: flex;
+            text-decoration: none;
+            color: #e0e0e0;
+            padding: 10px 20px;
+            margin: 5px;
+            display: inline-block;
+            background-color: #16213e;
+            border-radius: 5px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            background-color: #f0a500;
+            color: #1a1a2e;
+        }
+
+        main {
+            max-width: 900px;
+            margin: auto;
+            margin-top: 20px;
+            background: #252539;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            text-align: left;
+        }
+
+        section {
+            display: none;
+            padding: 20px;
+        }
+
+        .active {
+            display: block;
+        }
+
+        h2 {
+            color: #f0a500;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            color: #48c9b0;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #2d2d4a;
+            padding: 12px;
+            margin: 6px 0;
+            border-radius: 6px;
+            color: #e0e0e0;
+        }
+
+        ul li:hover {
+            background: #3a3a5a;
+        }
+
+        figure {
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        img {
+            border-radius: 8px;
+        }
+
+        figcaption {
+            margin-top: 6px;
+            font-size: 0.9rem;
+            color: #bbb;
+        }
+
+        footer {
+            background-color: #0f3460;
+            padding: 1px 10px;
+            margin-top: 20px;
+            color: white;
+        }
+
+        footer a {
+            color: #f0a500;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+	<script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1>League of Legends</h1>
+        <nav>
+            <a href="#" onclick="showSection(event, 'home')">Home</a>
+            🗿
+            <a href="#" onclick="showSection(event, 'about')">About</a>
+            🗿
+            <a href="#" onclick="showSection(event, 'time')">Best Times</a>
+            🗿
+            <a href="#" onclick="showSection(event, 'locations')">Locations</a>
+            🗿
+            <a href="#" onclick="showSection(event, 'how')">How</a>
+            🗿
+            <a href="#" onclick="showSection(event, 'why')">Why</a>
+            🗿
+            <a href="#" onclick="showSection(event, 'ai-prompts')">AI Prompts</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="active">
+            <h2>Home</h2>
+
+            <figure>
+                <img src="images/home1.png" alt="League of Legends team fight">
+                <figcaption>Depiction of a chaotic team fight in League of Legends</figcaption>
+            </figure>
+            <p><em>Prompt: "Manga style League of Legends team fight with real in game champions."</em></p>
+
+            <p>
+                League of Legends is a fast-paced multiplayer online battle arena (MOBA) where two 
+                teams of five champions compete to destroy the enemy Nexus. With over 160 unique champions, 
+                strategic gameplay, and constant updates, it remains one of the most popular esports titles 
+                in the world.
+            </p> 
+
+            <ul>
+                <li>Over 160 unique champions with different playstyles.</li>
+                <li>Five roles: Top, Jungle, Mid, ADC, and Support.</li>
+                <li>Team-based strategy with a focus on objectives.</li>
+                <li>Esports tournaments with millions of viewers worldwide.</li>
+                <li>Regular updates and new content to keep the game fresh.</li>
+            </ul>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+
+            <figure>
+                <img src="images/about1.png" alt="AI depiction of Zeri">
+                <figcaption>Depiction of Zeri from ChatGPT's perspective</figcaption>
+            </figure>
+            <p><em>Prompt: "Manga style depiction of Zeri from League of Legends."</em></p>
+
+            <p>
+                I got into League of Legends in 2022 which was very late considering the game had been
+                over 10 years old by then. I usually enjoy shooter games such as Valorant, Apex Legends, Fortnite, and Overwatch.
+                Never would I have thought I would ever play League of Legends since the only time I tried it, I hated it. 
+                This all changed in late 2022 when I decided to watch League of Legends Worlds 2022 which had a lot of coverage 
+                during that time. This was when I discovered the team DRX and a player named Deft. I enjoyed their underdog 
+                story and was inspired to play. From this point on I started to play League of Legends in the role of ADC like my 
+                favorite player Deft. 
+            </p>
+
+            <h3>Other games I enjoy and my favorite character to play in each: </h3>
+            <ul>
+                <li>Overwatch - Sojourn and Tracer</li>
+                <li>Valorant - Jett and Sova</li>
+                <li>Apex Legends - Revenant</li>
+                <li>Plants Vs Zombies</li>
+                <li>Bloons TD 5 & 6</li>
+            </ul>
+        </section>
+
+        <section id="time">
+            <h2>Best Times</h2>
+
+            <p>
+                You can play League of Legends any time of the day. Pick a time that is right for you and 
+                hop into the rift! My favorite time to play games is when I am finished with all my 
+                responsibilities for that day. As a result, my playing time is usually later in the day. 
+                I also enjoy watching League of Legends Esports which runs throughout most of the year. 
+            </p>
+
+            <h3>Best Time to Watch Esports</h3>
+            <ul>
+                <li><strong>Spring & Summer Splits:</strong> Regional leagues (LCK, LPL, LEC, LTA) run from January to August.</li>
+                <li><strong>Mid-Season Invitational (MSI):</strong> International showdown in May.</li>
+                <li><strong>World Championship (Worlds):</strong> The biggest event, held in October - November.</li>
+            </ul>
+
+            <figure>
+                <img src="images/time1.png" alt="playing league of legends">
+                <figcaption>Enjoying League of Legends in free time</figcaption>
+            </figure>
+            <p><em>Prompt: "Manga style colored illustration of someone playing League of Legends at home."</em></p>
+        </section>
+
+        <section id="locations">
+            <h2>Locations</h2>
+
+            <p>
+                Like any other video game, you can play League of Legends from anywhere.
+                It is not a hard game to run so an old computer can still play it just fine. 
+                You can play on your laptop or personal computer at home. Some people opt to play 
+                at internet cafes or PC bangs that are popular in Asia. These are places that offer 
+                PC to play games on for a small hourly fee. 
+            </p>
+
+            <figure>
+                <img src="images/location1.png" alt="home gaming pc set up">
+                <figcaption>A neat home computer set up</figcaption>
+            </figure>
+            <p><em>Prompt: "Manga style colored minimal gaming set up with two monitors."</em></p>
+
+            <figure>
+                <img src="images/location2.png" alt="internet cafe">
+                <figcaption>Internet cafe with people playing games together</figcaption>
+            </figure>
+            <p><em>Prompt: "Manga style internet cafe where people are playing games."</em></p>
+        </section>
+
+        <section id="how">
+            <h2>How</h2>
+
+            <p>
+                League of Legends is a hard game to pick up as I disliked it the first time I played it.
+                It was different from the shooter games I came from, but it quickly grew on me. My only suggestion
+                is to keep playing the game to improve. Like anything in life, you can only get better by practicing more.
+            </p>
+
+            <h3>Other Ways to Improve</h3>
+            <ul>
+                <li>Watch YouTube Guides</li>
+                <li>Watch streamers play the game</li>
+                <li>Watch League of Legends Esports</li>
+                <li>Play More!</li>
+            </ul>
+
+            <figure>
+                <img src="images/how1.png" alt="watching league youtube guides">
+                <figcaption>Watching YouTube guides for tips and tricks</figcaption>
+            </figure>
+            <p><em>Prompt: "A manga style illustration of someone watching a League of Legends YouTube guide."</em></p>
+        </section>
+
+        <section id="why">
+            <h2>Why</h2>
+
+            <figure>
+                <img src="images/why1.png" alt="deft winning worlds 2022">
+                <figcaption>Deft finally winning a trophy he worked 10 years for</figcaption>
+            </figure>
+            <p><em>Prompt: "In a manga style, Deft celebrating Worlds 2022 win with his team."</em></p>
+
+            <p>
+                League of Legends isn't just a game, it's a story of resilience, skill, and unforgettable moments. 
+                Esports has turned LoL into a worldwide phenomenon, with players and teams writing their legacies 
+                on the biggest stage. One of the most inspiring stories was DRX's 2022 Worlds run, where Deft, after a 
+                decade of struggle, led his team from Play-Ins to a miraculous victory. They took down tournament favorites 
+                like Gen.G and T1, proving that heart and perseverance can defy all odds.
+            </p>
+
+            <h3>Some of my other favorite pro League of Legends players:</h3>
+            <ul>
+                <li>ShowMaker</li>
+                <li>Canyon</li>
+                <li>Beryl</li>
+                <li>Keria</li>
+                <li>Peanut</li>
+                <li>Bdd</li>
+                <li>Faker</li>
+            </ul>
+        </section>
+
+        <section id="ai-prompts">
+            <h2>AI Prompts</h2>
+            <h3>Prompts Used:</h3>
+            <ul>
+                <li>Given the HTML, generate the neccesary JS and CSS to mimick multiple pages by hiding and showing sections.</li>
+                <li>Given the HTML, give me the CSS for a dark modern look. Make sure to follow the CRAP principles.</li>
+                <li>Write a concise introduction for League of Legends.</li>
+                <li>In bullets, give some more information on League of Legends.</li>
+                <li>In bullets, tell me when each League of Legends esports event take place in the year.</li>
+                <li>Write a short paragraph of why people should play League of Legends. Make sure to include Deft and Worlds 2022.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p id="copyright">
+            Designed by <a href="../lyenterprises.co/./" target="_blank">Ly Enterprises</a> &copy; 2025, 
+            <em>Certified in <a href="https://www.freecodecamp.org/certification/bly3/responsive-web-design" target="_blank">Responsive Web Design</a></em>
+        </p>
+    </footer>
+
+    <script>
+        function showSection(event, id) {
+            event.preventDefault(); 
+    
+            document.querySelectorAll("section").forEach((section) => {
+                section.classList.remove("active");
+            });
+    
+            document.getElementById(id).classList.add("active");
+        }
+    
+        document.addEventListener("DOMContentLoaded", () => {
+            showSection(new Event('DOMContentLoaded'), 'home'); 
+        });
+    </script>
+</body>
+</html>
