@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bao Ly's Boundless Lynx || ITIS3135 Tables</title>
+        <link rel="stylesheet" href="styles/default.css">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+
+        <main>
+            <h2>HTML Tables</h2>
+            
+            <h3>My Tabular Data</h3>
+            <ol>
+                <li>LeBron James - james23@blynx.com - 22 Years of Service</li>
+                <li>Russell Westbrook - westbrook0@blynx.com - 17 Years of Service</li>
+                <li>Kevin Durant - durant35@blynx.com - 18 Years of Service</li>
+                <li>Stephen Curry - curry30@blynx.com - 16 Years of Service</li>
+                <li>Chris Paul - cp3@blynx.com - 19 Years of Service</li>
+                <li>Paul George - pg13@blynx.com - 14 Years of Service</li>
+                <li>Damian Lillard - lillard0@blynx.com - 13 Years of Service</li>
+                <li>Jayson Tatum - tatum0@blynx.com - 8 Years of Service</li>
+            </ol>
+
+            <h3>Employee Data in Simple Table</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Years of Service</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>LeBron James</td>
+                        <td>james23@blynx.com</td>
+                        <td>22</td>
+                    </tr>
+
+                    <tr>
+                        <td>Russell Westbrook</td>
+                        <td>westbrook0@blynx.com</td>
+                        <td>17</td>
+                    </tr>
+
+                    <tr>
+                        <td>Kevin Durant</td>
+                        <td>durant35@blynx.com</td>
+                        <td>18</td>
+                    </tr>
+
+                    <tr>
+                        <td>Stephen Curry</td>
+                        <td>curry30@blynx.com</td>
+                        <td>16</td>
+                    </tr>
+
+                    <tr>
+                        <td>Chris Paul</td>
+                        <td>cp3@blynx.com</td>
+                        <td>20</td>
+                    </tr>
+
+                    <tr>
+                        <td>Paul George</td>
+                        <td>pg13@blynx.com</td>
+                        <td>14</td>
+                    </tr>
+
+                    <tr>
+                        <td>Damian Lillard</td>
+                        <td>lillard0@blynx.com</td>
+                        <td>13</td>
+                    </tr>
+
+                    <tr>
+                        <td>Jayson Tatum</td>
+                        <td>tatum0@blynx.com</td>
+                        <td>8</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Employee Data in Complex Table</h3>
+            <figure>
+                <figcaption id="for-table">Employee Information</figcaption>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="category">Category</th>
+                            <th id="name">Name</th>
+                            <th id="email">Email</th>
+                            <th id="years">Years of Service</th>
+                            <th id="salary">Monthly Salary</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td rowspan="1">The GOAT</td>
+                            <td headers="name">LeBron James</td>
+                            <td headers="email">james23@blynx.com</td>
+                            <td headers="years">22</td>
+                            <td headers="salary">$100,000</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="3">Executives</td>
+                            <td headers="name">Russell Westbrook</td>
+                            <td headers="email">westbrook0@blynx.com</td>
+                            <td headers="years">17</td>
+                            <td headers="salary">$70,000</td>
+                        </tr>
+
+                        <tr>
+                            <td headers="name">Kevin Durant</td>
+                            <td headers="email">durant35@blynx.com</td>
+                            <td headers="years">18</td>
+                            <td headers="salary">$80,000</td>
+                        </tr>
+
+                        <tr>
+                            <td headers="name">Stephen Curry</td>
+                            <td headers="email">curry30@blynx.com</td>
+                            <td headers="years">16</td>
+                            <td headers="salary">$85,000</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="4">Managers</td>
+                            <td headers="name">Chris Paul</td>
+                            <td headers="email">cp3@blynx.com</td>
+                            <td headers="years">20</td>
+                            <td headers="salary">$75,000</td>
+                        </tr>
+
+                        <tr>
+                            <td headers="name">Paul George</td>
+                            <td headers="email">pg13@blynx.com</td>
+                            <td headers="years">14</td>
+                            <td headers="salary">$30,000</td>
+                        </tr>
+
+                        <tr>
+                            <td headers="name">Damian Lillard</td>
+                            <td headers="email">lillard0@blynx.com</td>
+                            <td headers="years">13</td>
+                            <td headers="salary">$50,000</td>
+                        </tr>
+
+                        <tr>
+                            <td headers="name">Jayson Tatum</td>
+                            <td headers="email">tatum0@blynx.com</td>
+                            <td headers="years">8</td>
+                            <td headers="salary">$20,000</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Total Years of Service</td>
+                            <td headers="years">128</td>
+                            <td headers="salary">$510,000</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </figure>
+        </main>
+
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+
+        <script src="scripts/HTMLInclude.min.js"></script>
+    </body>
+</html>

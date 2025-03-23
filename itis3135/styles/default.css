@@ -105,6 +105,48 @@ section {
     text-align: center;
 }
 
+table {
+    border-collapse: collapse;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+th {
+    border: 1px solid black;
+    padding: 9px;
+    text-align: left;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+td {
+    border: 1px solid black;
+    padding: 9px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #e0e0e0;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+ol {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    line-height: 2.2;
+    margin-bottom: 30px;
+}
+
+#for-table {
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
 /* Rule Overrides For Laptops / Small Screens */
 @media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
     header nav {
