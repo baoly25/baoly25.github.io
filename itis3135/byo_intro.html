@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bao Ly's Boundless Lynx || ITIS3135 BYO Intro</title>
+        <link rel="stylesheet" href="styles/default.css">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+
+        <main>
+            <h2>BYO Intro</h2>
+
+            <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+            <form id="survey" action="#">
+                <label for="name"><strong>Name:</strong></label>
+                <input type="text" id="name" name="name" value="Bao Ly">
+
+                <label for="mascot"><strong>Mascot:</strong></label>
+                <input type="text" id="mascot" name="mascot" value="Boundless Lynx">
+
+                <label for="image"><strong>Image:</strong></label>
+                <input type="file" id="image" name="image" accept="image/png, image/jpeg">
+
+                <label for="caption"><strong>Image Caption:</strong></label>
+                <input type="text" id="caption" name="caption" value="Me and Appa.">
+
+                <label for="personal"><strong>Personal Background:</strong></label>
+                <input type="text" id="personal" name="personal" value="I was born in Vietnam and moved to Charlotte in 2012.">
+
+                <label for="professional"><strong>Professional Background:</strong></label>
+                <input type="text" id="professional" name="professional" value="None.">
+
+                <label for="academic"><strong>Academic Background:</strong></label>
+                <input type="text" id="academic" name="academic" value="Sophomore, cybersecurity concentration.">
+
+                <label for="platform"><strong>Primary Computer Platform</strong></label>
+                <input type="text" id="platform" name="platform" value="MacOS.">
+
+                <label for="development"><strong>Background in Web Development:</strong></label>
+                <input type="text" id="development" name="development" value="Java and a bit of Python.">
+
+                <div id="coursesContainer">
+                    <label><strong>Courses Currently Taking</strong></label>
+                    <label for="course1"><strong>Course Title:</strong></label>
+                    <input type="text" id="course1" name="courses[]" value="ITSC 3135 - Software Engineering">
+                    <label for="description1"><strong>Course Description:</strong></label>
+                    <input type="text" id="description1" name="descriptions[]" value="Required.">
+                </div>
+
+                <button type="button" onclick="addCourse()">Add Course</button>
+
+                <br><br>
+
+                <label for="funny"><strong>Funny Thing:</strong></label>
+                <input type="text" id="funny" name="funny">
+
+                <label for="anything"><strong>Anything Else?</strong></label>
+                <input type="text" id="anything" name="anything">
+
+                <label>
+                    <input type="checkbox" id="agree" name="agree">
+                    I understand that what is on this page is not password 
+                    protected and I will not put anything here that I don't 
+                    want publicly available.
+                </label>
+
+                <br>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset" onclick="resetForm()">
+            </form>
+        </main>
+
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+
+        <script src="scripts/survey.js"></script>
+        <script src="scripts/HTMLInclude.min.js"></script>
+    </body>
+</html>
