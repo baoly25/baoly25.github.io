@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("Please fill out your mascot.");
             return;
         }
-
+        
         if (!file || !file.name.match(/\.(jpg|jpeg|png)$/i)) {
             alert("Upload a PNG or JPG image.");
             return;

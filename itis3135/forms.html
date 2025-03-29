@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bao Ly's Boundless Lynx || ITIS3135 Forms</title>
+        <link rel="stylesheet" href="styles/default.css">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+
+        <main>
+            <h2>HTML Forms</h2>
+
+            <h3>Help build Bounless Lynx Park together by telling us about yourself!</h3>
+
+            <form action="#">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="LeBron James" required>
+
+                <label for="number">Phone Number:</label>
+                <input type="tel" id="number" name="number" placeholder="704-123-4567" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="yourEmail@domain.com" required>
+                
+                <label>What types of felines are you most interested in?(Check all that apply)</label>
+                <label>
+                    <input type="checkbox" name="lions" value="lions"> 
+                    Lions
+                </label>
+
+                <label>
+                    <input type="checkbox" name="tigers" value="tigers"> 
+                    Tigers
+                </label>
+
+                <label>
+                    <input type="checkbox" name="domestic" value="domestic"> 
+                    Domestic Cats
+                </label>
+
+                <label>
+                    <input type="checkbox" name="lynxes" value="lynxes"> 
+                    Lynxes
+                </label>
+
+                <label>
+                    <input type="checkbox" name="cheetahs" value="cheetahs"> 
+                    Cheetahs
+                </label>
+
+                <label>
+                    <input type="checkbox" name="leopards" value="leopards"> 
+                    Leopards
+                </label>
+
+                <label>
+                    <input type="checkbox" name="cougars" value="cougars"> 
+                    Cougars
+                </label>
+
+                <br>
+                
+                <label>What is your age group?</label>
+                <label><input type="radio" name="ageGroup" value="Child"> Child</label>
+                <label><input type="radio" name="ageGroup" value="Teen"> Teen</label>
+                <label><input type="radio" name="ageGroup" value="Young"> Young Adult</label>
+                <label><input type="radio" name="ageGroup" value="Adult"> Adult</label>
+                <label><input type="radio" name="ageGroup" value="Senior"> Senior</label>
+
+                <br>
+
+                <label for="visitDay">Which day do you usually visit?</label>
+                <select name="visitDay" id="visitDay">
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                    <option value="Sunday">Sunday</option>
+                </select>
+
+                <br><br><br>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </main>
+
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+
+        <script src="scripts/HTMLInclude.min.js"></script>
+    </body>
+</html>

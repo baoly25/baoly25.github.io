@@ -157,7 +157,9 @@ form {
 form input[type="text"],
 form input[type="file"],
 form input[type="submit"],
-form input[type="reset"] {
+form input[type="reset"],
+form input[type="tel"],
+form input[type="email"] {
     width: 100%;
     margin-top: 5px;
     margin-bottom: 25px;
@@ -168,7 +170,9 @@ form input[type="reset"] {
     font-family: "Montserrat", sans-serif;
 }
 
-form input[type="text"] {
+form input[type="text"],
+form input[type="tel"],
+form input[type="email"] {
     resize: vertical;
     min-height: 30px;
     font-size: 15px;
@@ -225,6 +229,11 @@ input[type="submit"]:hover,
 input[type="reset"]:hover {
     background-color: #34D1BF;
     color: #0D1B2A;
+}
+
+select {
+    font-size: .9em;
+    padding: 3px;
 }
 
 /* Rule Overrides For Laptops / Small Screens */
