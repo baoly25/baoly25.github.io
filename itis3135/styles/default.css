@@ -47,6 +47,7 @@ h2 {
 
 h3 {
     color: #FAF9F6;
+    margin-top: 44px;
 }
 
 p {
@@ -85,6 +86,7 @@ li {
     color:#34D1BF;
     text-align: left;
     margin-left: 0;
+    margin-bottom: 20px;
 
 }
 
@@ -234,6 +236,10 @@ input[type="reset"]:hover {
 select {
     font-size: .9em;
     padding: 3px;
+}
+h4 {
+    color: #34D1BF;
+    margin-top: 33px;
 }
 
 /* Rule Overrides For Laptops / Small Screens */

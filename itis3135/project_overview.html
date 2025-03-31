@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bao Ly's Boundless Lynx || ITIS3135 Project Overview</title>
+        <link rel="stylesheet" href="styles/default.css">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+
+        <main>
+            <h2>Project</h2>
+
+            <section>
+                <h3>Project Name: Chopbox - Official Restaurant Website</h3>
+            </section>
+
+            <section>
+                <h3>Project Overview</h3>
+                <p>
+                    The Chopbox Restaurant Website is a static, informational site for a local, 
+                    family-owned Vietnamese and Japanese fusion restaurant. The purpose of this project is to provide 
+                    an online presence for the business, help customers view the menu, find the 
+                    location, and contact the restaurant easily. The site will include interactive 
+                    elements like a filterable menu and a contact form to make the experience more engaging.
+                </p>
+            
+                <h4>Intended Users</h4>
+                <ul>
+                    <li>Local customers looking for food options</li>
+                    <li>New visitors searching for Vietnamese and Japanese cuisine</li>
+                    <li>Returning customers checking hours or menu</li>
+                </ul>
+
+                <h4>Website Content Overview</h4>
+                <ul>
+                    <li>Home page with welcome message and featured dishes</li>
+                    <li>Menu page with images, category filtering, and lightbox interaction</li>
+                    <li>About page with the restaurant's story, location, hours, and expandable FAQ section</li>
+                    <li>Contact page with an inquiry form and embedded map</li>
+                    <li>Reviews page with customer feedback and dynamically loaded content</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Client Information</h3>
+                <ul>
+                    <li><strong>Client Name:</strong> Chanh Tin Tran</li>
+                    <li><strong>Business:</strong> Owner of Chopbox Restaurant</li>
+                    <li><strong>Email:</strong> [priviate]</li>
+                    <li><strong>Phone Number:</strong> [priviate]</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Wireframe</h3>
+                <figure>
+                    <img src="images/wireframe.png" alt="draw.io wireframe">
+                    <figcaption>Vision for home landing page</figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h3>Site Map</h3>
+                <figure>
+                    <img src="images/map.png" alt="draw.io site map">
+                    <figcaption>Intended structure of the site</figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h3>Page Design</h3>
+                <h4>1. Home Page (index.html)</h4>
+                <ul>
+                    <li><strong>Purpose:</strong> Welcome visitors and introduce the restaurant</li>
+                    <li><strong>Audience:</strong> All customers</li>
+                    <li><strong>Content:</strong> Restaurant name, intro text, featured dishes, navigation bar</li>
+                    <li><strong>User Input:</strong> None</li>
+                    <li><strong>Validation:</strong> None</li>
+                    <li><strong>UI Elements:</strong> Links to navigate to other pages</li>
+                    <li><strong>Actions:</strong> Clicking links takes users to other pages</li>
+                    <li><strong>Notes:</strong> All pages will have shared header, footer, and navigation bar in the header.</li>
+                </ul>
+
+                <h4>2. Menu Page (menu.html)</h4>
+                <ul>
+                    <li><strong>Purpose:</strong> Display food menu with images and categories</li>
+                    <li><strong>Audience:</strong> All customers, especially new visitors</li>
+                    <li><strong>Content:</strong> Menu items, descriptions, prices, images</li>
+                    <li><strong>User Input:</strong> Users click category buttons</li>
+                    <li><strong>Validation:</strong> None</li>
+                    <li><strong>UI Elements:</strong> Filter buttons, images, dynamic display</li>
+                    <li><strong>Actions:</strong> Show/hide items by category using JavaScriptX</li>
+                    <li><strong>Notes:</strong> None</li>
+                </ul>
+
+                <h4>3. About Page (about.html)</h4>
+                <ul>
+                    <li><strong>Purpose:</strong> Share the restaurant's background, story, hours, and location</li>
+                    <li><strong>Audience:</strong> Users wanting context or visiting in person</li>
+                    <li><strong>Content:</strong> Text about the business, embedded map, hours of operation</li>
+                    <li><strong>User Input:</strong> None</li>
+                    <li><strong>Validation:</strong> None</li>
+                    <li><strong>UI Elements:</strong> jQuery UI Accordion for FAQs</li>
+                    <li><strong>Actions:</strong> Expand/collapse sections interactively</li>
+                    <li><strong>Notes:</strong> None</li>
+                </ul>
+
+                <h4>4. Contact Page (contact.html)</h4>
+                <ul>
+                    <li><strong>Purpose:</strong> Allow users to send messages or ask questions</li>
+                    <li><strong>Audience:</strong> Any customer needing help or info</li>
+                    <li><strong>Content:</strong> Contact form with name, email, message, address, phone</li>
+                    <li><strong>User Input:</strong> form fields</li>
+                    <li><strong>Validation:</strong> JS checks for required fields and valid email format</li>
+                    <li><strong>UI Elements:</strong> Input fields and submit button</li>
+                    <li><strong>Actions:</strong> On submit, form is validated with JavaScript</li>
+                    <li><strong>Notes:</strong> Functional but read-only</li>
+                </ul>
+
+                <h4>5. Reviews Page (reviews.html)</h4>
+                <ul>
+                    <li><strong>Purpose:</strong> Show customer feedback and ratings</li>
+                    <li><strong>Audience:</strong> New or returning customers</li>
+                    <li><strong>Content:</strong> Static review quotes, star ratings, reviewer names</li>
+                    <li><strong>User Input:</strong> Click to expand long reviews</li>
+                    <li><strong>Validation:</strong> None</li>
+                    <li><strong>UI Elements:</strong> Toggle buttons and star icons</li>
+                    <li><strong>Actions:</strong> JavaScript used to expand/collapse long reviews or dynamically load them from JSON via AJAX</li>
+                    <li><strong>Notes:</strong> None</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Dynamic Functionality</h3>
+                <ul>
+                    <li>
+                        <strong>Feature:</strong> Filterable Menu<br>
+                        <strong>Page:</strong> menu.html<br>
+                        <strong>Purpose:</strong> Lets users filter dishes by category (appetizers, entrees, drinks) to quickly view relevant items.<br>
+                        <strong>Example:</strong> <a href="https://www.etsy.com/search?q=cat&ref=search_bar" target="_blank">Etsy Filters</a>
+                    </li>
+
+                    <li>
+                        <strong>Feature:</strong> Lightbox Image Viewer<br>
+                        <strong>Page:</strong> menu.html<br>
+                        <strong>Purpose:</strong> Enlarges food images when clicked for better viewing.<br>
+                        <strong>Example:</strong> <a href="https://www.bestbuy.com/site/apple-airtag-4-pack-silver/6461349.p?skuId=6461349" target="_blank">Best Buy Lightbox</a>
+                    </li>
+                    
+                    <li>
+                        <strong>Feature:</strong> Accordion for FAQs<br>
+                        <strong>Page:</strong> about.html<br>
+                        <strong>Purpose:</strong> Allows users to expand/collapse questions for a cleaner layout.<br>
+                        <strong>Example:</strong> <a href="https://studentaid.gov/apply-for-aid/fafsa/filling-out/help" target="_blank">FSA FAQs</a>
+                    </li>
+                
+                    <li>
+                        <strong>Feature:</strong> Contact Form Validation<br>
+                        <strong>Page:</strong> contact.html<br>
+                        <strong>Purpose:</strong> Checks for required fields and valid email format before submitting.<br>
+                        <strong>Example:</strong> <a href="https://webpages.charlotte.edu/bly3/itis3135/byo_intro.html" target="_blank">My BYO Intro Page</a>
+                    </li>
+                
+                    <li>
+                        <strong>Feature:</strong> Load Reviews from JSON<br>
+                        <strong>Page:</strong> reviews.html<br>
+                        <strong>Purpose:</strong> Dynamically loads customer reviews using AJAX from a local JSON file.<br>
+                        <strong>Example:</strong> <a href="https://www.w3schools.com/jquery/ajax_getjson.asp" target="_blank">JSON and AJAX Tutorial</a>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+
+        <script src="scripts/HTMLInclude.min.js"></script>
+    </body>
+</html>
