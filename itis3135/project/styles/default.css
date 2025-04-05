@@ -41,6 +41,12 @@ nav a {
     background-color: #9b4342;
 }
 
+nav a:hover {
+    box-shadow: 0 0 8px #9b4342;
+    background-color: #a94b4a;
+    cursor: pointer;
+}
+
 main {
     padding: 2rem;
 }
