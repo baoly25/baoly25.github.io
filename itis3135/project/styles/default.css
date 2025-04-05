@@ -1,0 +1,42 @@
+:root {
+    --main-color: #2f4f4f;
+    --light-tan: #f5deb3;
+    --dark-gray: #2f4f4f;
+    --off-white: #fffaf0;
+    --almost-black: #111111;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--off-white);
+    color: var(--almost-black);
+    line-height: 1.6;
+}
+
+header,
+footer {
+    background-color: var(--main-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+}
