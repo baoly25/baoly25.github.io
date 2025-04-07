@@ -13,9 +13,25 @@
             <div data-include="components/header.html"></div>
         </header>
 
-        <main>
-            <h2>Contact Us!</h2>
+        <main class="contact-page">
+            <h2>Contact Us</h2>
 
+            <p>Have a question, comment, or feedback? Send us a message below:</p>
+    
+            <form id="contact-form">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name">
+    
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email">
+    
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+    
+                <button type="submit">Send Message</button>
+            </form>
+    
+            <!-- will implement js to check for required fields later -->
         </main>
 
         <footer>
