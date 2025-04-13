@@ -242,6 +242,70 @@ h4 {
     margin-top: 33px;
 }
 
+.slideshow-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+}
+
+.caption {
+    color: #34D1BF;
+    font-size: 18px;
+    padding: 8px 12px;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.column {
+    flex: 0 0 100px;
+}
+
+.demo {
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+}
+
+.demo:hover, 
+.active {
+    opacity: 1;
+    border-color: #58A6FF;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 47%;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: #58A6FF;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.next {
+    right: 0;
+}
+  
+.prev {
+    left: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: #34D1BF;
+    text-decoration: none;
+}
+
 /* Rule Overrides For Laptops / Small Screens */
 @media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
     header nav {
