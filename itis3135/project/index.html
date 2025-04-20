@@ -16,7 +16,7 @@
         <main>
             <h2>Home</h2>
 
-            <div class="home-layout">  <!-- used div here because it would require an h tag if I used section -->
+            <div class="home-layout">
                 <aside class="quick-info">
                     <h3>Quick Info</h3>
                     <p><strong>Hours:</strong> Open Daily 11am-8pm</p>
@@ -24,9 +24,21 @@
                     <p><strong>Address:</strong> <a href="https://www.google.com/maps/dir//35.4105537,-80.581821/@35.4105257,-80.6642221,12z?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D" target="_blank">9 Union Street North Concord, NC 28025</a></p>
                 </aside>
     
-                <div class="featured-dishes"> <!-- used div here because it would require an h tag if I used section -->
-                    <p>Featured Dishes Slideshow Coming Soon (with JS and after I get images of the food)</p>
-                </div>
+                <!-- used js here for the slide show that display dishes -->
+                <div class="slideshow"> 
+                    <img id="slideshow-image" src="images/image1.png" alt="Featured Dish">
+
+                    <!-- dots to indicate where users are at in the slideshow -->
+                    <div class="slideshow-dots">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>             
     
                 <aside class="promotions">
                     <h3>Promotions</h3>
@@ -45,5 +57,6 @@
         </footer>
 
         <script src="scripts/HTMLInclude.min.js"></script>
+        <script src="scripts/slideshow.js"></script>
     </body>
 </html>

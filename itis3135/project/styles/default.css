@@ -1,9 +1,11 @@
+/* theme colors */
 :root {
     --main-color: #cbb994;
     --background-color: #fffaf0;
     --text-color: #111111;
 }
 
+/* general css for page uniformity */
 html, body {
     margin: 0;
     padding: 0;
@@ -25,6 +27,7 @@ footer {
     text-align: center;
 }
 
+/* nav bar */
 nav {
     display: flex;
     justify-content: center;
@@ -217,4 +220,44 @@ h2 {
     background-color: #a94b4a; 
     box-shadow: 0 0 8px #9b4342;
     cursor: pointer;
+}
+
+/* js slideshow */
+.slideshow {
+    width: 100%;
+    height: 100%;
+    max-height: 600px; 
+    overflow: hidden;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.slideshow img {
+    width: 100%;
+    height: 95%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.slideshow-dots {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+/* dot indicating what slide users are on */
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+.active {
+    background-color: #9b4342;
 }
