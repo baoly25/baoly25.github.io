@@ -9,16 +9,19 @@
     </head>
 
     <body>
+        <!-- Dynamically load header -->
         <header>
             <div data-include="components/header.html"></div>
         </header>
 
         <main class="about-page">
+            <!-- Introduction section -->
             <section class="intro">
                 <h2>Our Story</h2>
                 <p>Chopbox is a family-owned Vietnamese and Japanese fusion restaurant serving fresh and traditional recipes made with love. Located in downtown Concord, we bring together bold flavors and a casual dining experience for the local community.</p>
             </section>
 
+            <!-- Info block for hours, payment, dining options, and location -->
             <div class="info-block">
                 <section class="hours">
                     <h3>Hours</h3>
@@ -32,6 +35,7 @@
                         <li>Dine-in</li>
                         <li>Takeout</li>
                         <li>Delivery (via DoorDash/Uber Eats)</li>
+                        <li>Order Online Pick Up <a href="https://www.chopboxconcord.com/order" id="order-link">Here</a></li>
                     </ul>
                 </section>
                 <section class="location">
@@ -39,6 +43,7 @@
 
                     <p>9 Union Street North<br>Concord, NC 28025</p>
 
+                    <!-- Embedded Google Map -->
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d203.23658239376368!2d-80.58178976401726!3d35.41057151380665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88540f359def6d5f%3A0xdc3234442486b1b0!2sChopbox!5e0!3m2!1sen!2sus!4v1744054209103!5m2!1sen!2sus"
                         class="map-frame"
@@ -49,25 +54,54 @@
                 </section>
             </div>
     
+            <!-- FAQ section with accordion interactivity (with JS) -->
             <section class="faq">
-                <h2>Frequently Asked Questions</h2> <!-- JS will be implmented later for FAQ -->
+                <h2>Frequently Asked Questions</h2> 
                 
-                <section class="faq-item"> <!-- I will also add more FAQ -->
-                    <h4>Do you offer vegetarian or vegan options?</h4>
+                <section class="faq-item">
+                    <h4>Do you offer vegetarian or vegan options? <span class="arrow">&#9662;</span></h4>
                     <p>Yes, we offer a variety of plant-based dishes. Ask our staff for recommendations.</p>
                 </section>
 
                 <section class="faq-item">
-                    <h4>Is parking available?</h4>
+                    <h4>Is parking available? <span class="arrow">&#9662;</span></h4>
                     <p>Yes, there is street parking and parking decks nearby.</p>
+                </section>
+
+                <section class="faq-item">
+                    <h4>Can I place an order online? <span class="arrow">&#9662;</span></h4>
+                    <p>Yes, you can order through DoorDash or Uber Eats for delivery and order pick oneline <a href="https://www.chopboxconcord.com/order" id="order-link">here</a>.</p>
+                </section>
+
+                <section class="faq-item">
+                    <h4>Do you take reservations? <span class="arrow">&#9662;</span></h4>
+                    <p>We currently operate on a walk-in basis only. However, you can contact us for parties and celebrations.</p>
+                </section>
+
+                <section class="faq-item">
+                    <h4>Are your dishes made fresh? <span class="arrow">&#9662;</span></h4>
+                    <p>Yes, all our dishes are made fresh to order using locally sourced ingredients.</p>
+                </section>
+
+                <section class="faq-item">
+                    <h4>Do you have gluten-free options? <span class="arrow">&#9662;</span></h4>
+                    <p>We offer several gluten-free options. Please ask our staff for guidance when ordering.</p>
+                </section>
+
+                <section class="faq-item">
+                    <h4>Is the restaurant kid-friendly? <span class="arrow">&#9662;</span></h4>
+                    <p>Yes, we have high chairs available and our menu includes kid-friendly options.</p>
                 </section>
             </section>
         </main>
 
+        <!-- Dynamically load footer -->
         <footer>
             <div data-include="components/footer.html"></div>
         </footer>
 
+        <!-- Scripts for HTML includes and FAQ accordion functionality -->
         <script src="scripts/HTMLInclude.min.js"></script>
+        <script src="scripts/faqaccordion.js"></script>
     </body>
 </html>

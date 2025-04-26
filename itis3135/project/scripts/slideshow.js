@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const image = document.getElementById("slideshow-image");
-    const dots = document.querySelectorAll(".dot");
+    const image = document.getElementById("slideshow-image"); // Slideshow main image
+    const dots = document.querySelectorAll(".dot"); // Dots under the slideshow
 
     const images = [
         "images/image1.png",
@@ -12,15 +12,15 @@ document.addEventListener("DOMContentLoaded", function () {
         "images/image7.png"
     ];
     
-    let index = 0;
+    let index = 0; // Current image index
 
     setInterval(() => {
-        index = (index + 1) % images.length;
-        image.src = images[index];
+        index = (index + 1) % images.length; // Move to next image, loop back if needed
+        image.src = images[index]; // Update image
 
-        // updating dots
+        // Update dots to show active slide
         dots.forEach((dot, i) => {
             dot.classList.toggle("active", i === index);
         });
-    }, 2000); // interval of 2 seconds
+    }, 2000); // Change image every 2 seconds
 });

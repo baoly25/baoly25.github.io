@@ -1,3 +1,4 @@
+<!-- ====================== Fix dots later ====================== -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -9,6 +10,7 @@
     </head>
 
     <body>
+        <!-- Dynamically load header -->
         <header>
             <div data-include="components/header.html"></div>
         </header>
@@ -18,17 +20,18 @@
 
             <div class="home-layout">
                 <aside class="quick-info">
+                    <!-- Quick info section with hours, contact, address -->
                     <h3>Quick Info</h3>
                     <p><strong>Hours:</strong> Open Daily 11am-8pm</p>
                     <p><strong>Call:</strong> (980) 248-1858</p>
                     <p><strong>Address:</strong> <a href="https://www.google.com/maps/dir//35.4105537,-80.581821/@35.4105257,-80.6642221,12z?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D" target="_blank">9 Union Street North Concord, NC 28025</a></p>
                 </aside>
     
-                <!-- used js here for the slide show that display dishes -->
+                <!-- Slideshow showing featured dishes (with JS) -->
                 <div class="slideshow"> 
                     <img id="slideshow-image" src="images/image1.png" alt="Featured Dish">
 
-                    <!-- dots to indicate where users are at in the slideshow -->
+                    <!-- Dots to show slideshow progress -->
                     <div class="slideshow-dots">
                         <span class="dot"></span>
                         <span class="dot"></span>
@@ -39,23 +42,27 @@
                         <span class="dot"></span>
                     </div>
                 </div>             
-    
+
+                <!-- Promotions section -->
                 <aside class="promotions">
                     <h3>Promotions</h3>
                     <p>Buy 1 Get 1 50% Off</p>
                 </aside>
             </div>
-    
+
+            <!-- About Chopbox brief description -->
             <section class="about-blurb">
                 <h3>About Chopbox</h3>
                 <p>We serve fresh Vietnamese and Japanese fusion food with family recipes and local ingredients.</p>
             </section>
         </main>
 
+        <!-- Dynamically load footer -->
         <footer>
             <div data-include="components/footer.html"></div>
         </footer>
 
+        <!-- Scripts for HTML includes and slideshow functionality -->
         <script src="scripts/HTMLInclude.min.js"></script>
         <script src="scripts/slideshow.js"></script>
     </body>

@@ -5,7 +5,7 @@
     --text-color: #111111;
 }
 
-/* general css for page uniformity */
+/* General page setup */
 html, body {
     margin: 0;
     padding: 0;
@@ -19,6 +19,7 @@ body {
     line-height: 1.6;
 }
 
+/* Header and Footer styles */
 header,
 footer {
     background-color: var(--main-color);
@@ -27,7 +28,7 @@ footer {
     text-align: center;
 }
 
-/* nav bar */
+/* Navigation bar */
 nav {
     display: flex;
     justify-content: center;
@@ -50,17 +51,19 @@ nav a:hover {
     cursor: pointer;
 }
 
+/* Main content layout */
 main {
     padding: 2rem;
 }
 
+/* Section headings */
 h2 {
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
 }
 
-/* index page: */
+/* index page layout */
 .home-layout {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -70,6 +73,7 @@ h2 {
     min-height: 555px;
 }
 
+/* Quick info and promotions boxes */
 .quick-info,
 .promotions {
     background-color: var(--main-color);
@@ -81,6 +85,7 @@ h2 {
     justify-content: flex-start;
 }
 
+/* Featured dishes section */
 .featured-dishes {
     display: flex;
     align-items: center;
@@ -88,6 +93,7 @@ h2 {
     background-color: var(--main-color)
 }
 
+/* About blurb section */
 .about-blurb {
     background-color: var(--main-color);
     padding: 1rem;
@@ -100,6 +106,7 @@ h2 {
     margin-bottom: 0;
 }
 
+/* Quick info links */
 .quick-info a {
     text-decoration: none;
     color: var(--text-color);
@@ -110,7 +117,7 @@ h2 {
     color: var(--text-color);
 }
 
-/* about page: */
+/* about page layout */
 .about-page {
     padding: 2rem;
     max-width: 900px;
@@ -121,6 +128,7 @@ h2 {
     margin-bottom: 2rem;
 }
 
+/* Info block on about page */
 .about-page .info-block {
     display: flex;
     flex-wrap: wrap;
@@ -128,6 +136,7 @@ h2 {
     margin-bottom: 2rem;
 }
 
+/* Sections inside info block */
 .about-page .info-block > section {
     flex: 1 1 300px;
     background-color: var(--main-color);
@@ -136,6 +145,7 @@ h2 {
     color: var(--text-color);
 }
 
+/* FAQ section */
 .about-page .faq {
     background-color: var(--main-color);
     padding: 1rem;
@@ -143,25 +153,28 @@ h2 {
     color: var(--text-color);
 }
 
+/* Embedded map */
 .map-frame {
     width: 100%;
     height: 250px;
     border-radius: 6px;
 }
 
-/* review page: */
+/* reviews page layout */
 .reviews-page {
     padding: 2rem;
     max-width: 900px;
     margin: 0 auto;
 }
 
+/* Review container grid */
 #reviews-container {
     display: grid;
     gap: 1.5rem;
     margin-top: 1rem;
 }
 
+/* Individual review card */
 .review-card {
     background-color: var(--main-color);
     padding: 1rem;
@@ -170,23 +183,26 @@ h2 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
+/* Review text styling */
 .review-text {
     font-style: italic;
     margin-bottom: 0.5rem;
 }
 
+/* Review rating styling */
 .review-rate {
     font-size: 0.9rem;
     color: var(--text-color);
 }
 
-/* contact page: */
+/* contact page layout */
 .contact-page {
     padding: 2rem;
     max-width: 600px;
     margin: 0 auto;
 }
 
+/* Contact form styling */
 .contact-page form {
     display: flex;
     flex-direction: column;
@@ -198,6 +214,7 @@ h2 {
     font-weight: bold;
 }
 
+/* Contact form input and textarea */
 .contact-page input,
 .contact-page textarea {
     padding: 0.5rem;
@@ -206,6 +223,7 @@ h2 {
     font-size: 1rem;
 }
 
+/* Contact form button */
 .contact-page button {
     background-color: #9b4342;
     color: white;
@@ -222,7 +240,7 @@ h2 {
     cursor: pointer;
 }
 
-/* js slideshow */
+/* JS slideshow styling (Dynamic Functionality #1) */
 .slideshow {
     width: 100%;
     height: 100%;
@@ -236,6 +254,7 @@ h2 {
     position: relative;
 }
 
+/* Slideshow image */
 .slideshow img {
     width: 100%;
     height: 95%;
@@ -243,6 +262,7 @@ h2 {
     border-radius: 6px;
 }
 
+/* Slideshow dots container */
 .slideshow-dots {
     display: flex;
     gap: 8px;
@@ -250,7 +270,7 @@ h2 {
     margin-top: 0.5rem;
 }
 
-/* dot indicating what slide users are on */
+/* Dot indicators */
 .dot {
     width: 12px;
     height: 12px;
@@ -258,6 +278,89 @@ h2 {
     background-color: #ccc;
 }
 
+/* Active slide dot */
 .active {
     background-color: #9b4342;
+}
+
+/* FAQ accordion behavior (Dynamic Functionality #2) */
+.faq-item p {
+    display: none;
+    margin-top: 5px;
+}
+
+/* Show FAQ answer when open */
+.open-faq p {
+    display: block;
+}
+
+/* FAQ question header */
+h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.5rem 0;
+}
+
+/* FAQ arrow transition */
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+/* Rotate arrow when open */
+.open-faq .arrow {
+    transform: rotate(180deg);
+}
+
+/* Order link styling */
+#order-link {
+    color: #9b4342;
+    text-decoration: none;
+}
+
+#order-link:hover {
+    color: #a94b4a;
+    text-decoration: underline;
+}
+
+/* menu page layout */
+.menu-page {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* menu filter dropdown */
+.menu-filter {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.menu-filter select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* menu items grid (Dynamic Functionality #3) */
+#menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* individual menu item */
+.menu-item {
+    background-color: #9b4342;
+    color: white;
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }

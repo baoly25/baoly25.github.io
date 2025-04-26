@@ -9,6 +9,7 @@
     </head>
 
     <body>
+        <!-- Dynamically load header -->
         <header>
             <div data-include="components/header.html"></div>
         </header>
@@ -18,6 +19,7 @@
 
             <p>Have a question, comment, or feedback? Send us a message below:</p>
     
+            <!-- Contact form with required fields -->
             <form id="contact-form">
                 <label for="name">Name *</label>
                 <input type="text" id="name" name="name">
@@ -30,14 +32,14 @@
     
                 <button type="submit">Send Message</button>
             </form>
-    
-            <!-- will implement js to check for required fields later -->
         </main>
 
+        <!-- Dynamically load footer -->
         <footer>
             <div data-include="components/footer.html"></div>
         </footer>
 
+        <!-- Scripts for HTML includes -->
         <script src="scripts/HTMLInclude.min.js"></script>
     </body>
 </html>

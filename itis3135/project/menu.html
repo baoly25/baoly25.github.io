@@ -9,20 +9,85 @@
     </head>
 
     <body>
+        <!-- Dynamically load header -->
         <header>
             <div data-include="components/header.html"></div>
         </header>
 
         <main>
             <h2>Menu</h2>
-            <p>will implement with JS once I get image of the food.</p>
 
+            <!-- Dropdown to filter menu items by category (with JS) -->
+            <div class="menu-filter">
+                <label for="category-select">Filter:</label>
+                <select id="category-select">
+                    <option value="all">All</option>
+                    <option value="pho">Pho</option>
+                    <option value="appetizers">Appetizers</option>
+                    <option value="hibachi">Hibachi</option>
+                    <option value="vegan">Vegan</option>
+                    <option value="dessert">Dessert</option>
+                    <option value="side">Side</option>
+                    <option value="special">Special</option>
+                </select>
+            </div>
+
+            <!-- Grid of menu items -->
+            <div id="menu-items" class="menu-grid">
+                <!-- Pho dishes -->
+                <div class="menu-item" data-category="pho">Combination Pho</div>
+                <div class="menu-item" data-category="pho">Pho with Beef Brisket and Flank</div>
+                <div class="menu-item" data-category="pho">Pho with Beef Eye Round</div>
+                <div class="menu-item" data-category="pho">Pho with Beef Meatball</div>
+                <div class="menu-item" data-category="pho">Pho with Meatball and Beef Eye Round</div>
+                <div class="menu-item" data-category="pho">Pho with Shrimp</div>
+                <div class="menu-item" data-category="pho">Pho with Chicken</div>
+                <div class="menu-item" data-category="pho">Pho with Rare Beef and Brisket</div>
+                <div class="menu-item" data-category="pho">Pho with Beef Brisket</div>
+                <div class="menu-item" data-category="pho">Pho with Beef Tendon and Meatball</div>
+                <div class="menu-item" data-category="pho">Pho with Rare Beef</div>
+                <div class="menu-item" data-category="pho">Pho with Rare Beef and Meatball</div>
+                <div class="menu-item" data-category="pho vegan">Pho with Vegetables</div>
+
+                <!-- Appetizers -->
+                <div class="menu-item" data-category="appetizers">Vegetable Spring Rolls</div>
+                <div class="menu-item" data-category="appetizers">Egg Rolls</div>
+                <div class="menu-item" data-category="appetizers">Butter Corn</div>
+                <div class="menu-item" data-category="appetizers">Vietnamese Rice Paper Rolls</div>
+
+                <!-- Hibachi dishes -->
+                <div class="menu-item" data-category="hibachi">Hibachi Chicken with Mushrooom</div>
+                <div class="menu-item" data-category="hibachi">Teriyaki Chicken with Broccoli</div>
+                <div class="menu-item" data-category="hibachi">Hibachi Steak with Mushroom</div>
+                <div class="menu-item" data-category="hibachi">Teriyaki Steak with Broccoli</div>
+                <div class="menu-item" data-category="hibachi vegan">Vegetable Hibachi</div>
+                <div class="menu-item" data-category="hibachi">Scallops with Broccoli</div>
+                <div class="menu-item" data-category="hibachi">Shrimp with Broccoli</div>
+                <div class="menu-item" data-category="hibachi">Fish with Broccoli</div>
+
+                <!-- Desserts -->
+                <div class="menu-item" data-category="dessert">Flan Caramel</div>
+                <div class="menu-item" data-category="dessert">Passion Fruit Panna Cotta</div>
+
+                <!-- Side dishes -->
+                <div class="menu-item" data-category="side vegan">Zucchini & Onions</div>
+                <div class="menu-item" data-category="side">Shrimp Sauce</div>
+                <div class="menu-item" data-category="side vegan">Sweet Carrots</div>
+                <div class="menu-item" data-category="side vegan">Hibachi Noodles</div>
+                <div class="menu-item" data-category="side vegan">Fried Rice</div>
+
+                <!-- Special dishes -->
+                <div class="menu-item" data-category="special">Shaking Beef with French Fries</div>
+            </div>
         </main>
 
+        <!-- Dynamically load header -->
         <footer>
             <div data-include="components/footer.html"></div>
         </footer>
 
+        <!-- Scripts for HTML includes and menu filter functionality -->
         <script src="scripts/HTMLInclude.min.js"></script>
+        <script src="scripts/menufilter.js"></script>
     </body>
 </html>

@@ -1,3 +1,4 @@
+<!-- ============================ Add more reviews later ============================== -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -9,6 +10,7 @@
     </head>
 
     <body>
+        <!-- Dynamically load header -->
         <header>
             <div data-include="components/header.html"></div>
         </header>
@@ -16,7 +18,7 @@
         <main class="reviews-page">
             <h2>Customer Reviews</h2>
 
-            <!-- will use js to dynamically load the reviews later -->
+            <!-- Container for customer review cards -->
             <div id="reviews-container">
                 <div class="review-card">
                     <p class="review-text">
@@ -32,6 +34,7 @@
 
                     <p class="review-rate">★★★★★ - Jasmine S.</p>
                 </div>
+
                 <div class="review-card">
                     <p class="review-text">
                         “After venturing downtown Concord and hitting up the basement, the three of us stopped in 
@@ -59,10 +62,12 @@
             </div>
         </main>
 
+        <!-- Dynamically load footer -->
         <footer>
             <div data-include="components/footer.html"></div>
         </footer>
 
+        <!-- Scripts for HTML includes -->
         <script src="scripts/HTMLInclude.min.js"></script>
     </body>
 </html>
