@@ -314,12 +314,12 @@ h4 {
 }
 
 /* Order link styling */
-#order-link {
+.order-link {
     color: #9b4342;
     text-decoration: none;
 }
 
-#order-link:hover {
+.order-link:hover {
     color: #a94b4a;
     text-decoration: underline;
 }
@@ -338,7 +338,7 @@ h4 {
 }
 
 .menu-filter select {
-    padding: 0.5rem;
+    padding: 0.1rem;
     font-size: 1rem;
     border-radius: 4px;
     border: 1px solid #ccc;
