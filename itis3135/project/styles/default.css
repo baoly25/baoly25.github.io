@@ -319,12 +319,6 @@ h4 {
 /* Order link styling */
 .order-link {
     color: #111111;
-    text-decoration: none;
-}
-
-.order-link:hover {
-    color: #111111;
-    text-decoration: underline;
 }
 
 /* menu page layout */
