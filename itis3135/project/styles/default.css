@@ -1,3 +1,6 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
 /* theme colors */
 :root {
     --main-color: #cbb994;
@@ -13,7 +16,7 @@ html, body {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.6;
@@ -315,12 +318,12 @@ h4 {
 
 /* Order link styling */
 .order-link {
-    color: #9b4342;
+    color: #00674F;
     text-decoration: none;
 }
 
 .order-link:hover {
-    color: #a94b4a;
+    color: #fffaf0;
     text-decoration: underline;
 }
 
